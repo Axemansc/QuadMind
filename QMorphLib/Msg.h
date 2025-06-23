@@ -8,7 +8,8 @@
 class Msg
 {
 public:
-	inline static bool debugMode = true;
+        inline static bool debugMode = true;
+        inline static std::string lastError;  // store last error message
 
 	/** Output an error message and then exit the program. */
 	static void error( const std::string& err );

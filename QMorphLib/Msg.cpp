@@ -6,7 +6,8 @@
 void 
 Msg::error( const std::string& err )
 {
-	std::cout << "Error: " << err << std::endl;
+        lastError = err;
+        std::cout << "Error: " << err << std::endl;
 	/*Frame f = new Frame();
 	MsgDialog errorDialog;
 	Error error = new Error( err );
